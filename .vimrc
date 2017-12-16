@@ -1,7 +1,11 @@
 " TODO: Add folding
 
-" UI
+" PATHOGEN
+execute pathogen#infect()
+filetype plugin indent on
 syntax on
+
+" UI
 set mouse=a			" Use the mouse
 set number			" Show line numbers
 set ruler			" Show current position
