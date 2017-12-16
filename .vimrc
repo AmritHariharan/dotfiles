@@ -1,11 +1,8 @@
+call pathogen#infect()
 " TODO: Add folding
 
-" PATHOGEN
-execute pathogen#infect()
-filetype plugin indent on
-syntax on
-
 " UI
+syntax on
 set mouse=a			" Use the mouse
 set number			" Show line numbers
 set ruler			" Show current position
@@ -15,6 +12,9 @@ set wildmenu		" Visual autocomplete for command menu
 set lazyredraw		" Only redraw when necessary
 set showmatch		" Show highlight matching for [{()}]
 set scrolloff=5		" Keep 5 lines above/below cursor
+
+" FILES
+filetype plugin indent on
 
 " TABBING
 set smarttab		" Smart tabbing
