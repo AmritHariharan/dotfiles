@@ -1,0 +1,3 @@
+[submodule ".vim/bundle/vim-livedown"]
+	path = .vim/bundle/vim-livedown
+	url = https://github.com/shime/vim-livedown
