@@ -14,6 +14,7 @@ set showmatch		" Show highlight matching for [{()}]
 set scrolloff=5		" Keep 5 lines above/below cursor
 
 " FILES
+set noswapfile
 filetype plugin indent on
 
 " TABBING
@@ -27,15 +28,16 @@ set ignorecase		" Case insensitive matching
 set smartcase		" Smart case matching
 set incsearch		" Incremental search
 set hlsearch		" Highlight search
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
-map <c-space> ?
 
 " KEY REMAPPING
 
 " I don't like hitting shift all the time
 nnoremap : ;
 nnoremap ; :
+
+" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
+map <space> /
+map <c-space> ?
 
 " Move to beginning/end of file
 nnoremap B ^
