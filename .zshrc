@@ -94,6 +94,7 @@ prompt pure
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+alias vimconfig="vim ~/.vimrc"
 
 # Courses aliases
 alias eecs376="cd ~/Google\ Drive/EECS/EECS\ 376"
