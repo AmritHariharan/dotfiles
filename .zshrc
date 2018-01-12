@@ -8,6 +8,7 @@ export ZSH=/Users/Amrit/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="materialshell-oceanic"
+#ZSH_THEME="spaceship"
 ZSH_THEME=""
 
 # Uncomment the following line to use case-sensitive completion.
@@ -102,12 +103,16 @@ alias eecs370="cd ~/Google\ Drive/EECS/EECS\ 370"
 alias eecs388="cd ~/Google\ Drive/EECS/EECS\ 388"
 alias stats250="cd ~/Google\ Drive/STATS/STATS\ 250"
 
-# Programming directories aliases
-alias projects="cd ~/Desktop/Programming\ Projects"
-alias barbot="cd ~/Desktop/Programming\ Projects/BarcodeBot"
+# Class project aliases
+alias project370="cd ~/Google\ Drive/EECS/EECS\ 370/projects/project1"
+alias project388="cd ~/Google\ Drive/EECS/EECS\ 388/projects/project1"
 
-# Aliases for work
-alias caenwp="cd ~/Google\ Drive/CAEN/wordpress"
+# Programming directories aliases
+alias projects="cd ~/Desktop/Projects"
+alias barbot="cd ~/Desktop/Projects/BarcodeBot"
+
+# C4CS Main Site
+alias c4cs="cd ~/Desktop/Projects/c4cs\.github\.io"
 
 # ssh into caen
 alias caen="ssh amrith@login.engin.umich.edu"
