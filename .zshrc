@@ -67,6 +67,22 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# Spaceship config
+# Order
+
+#SPACESHIP_PROMPT_ORDER=(
+#	user
+#	host
+#	dir
+#	git
+#	conda
+#	jobs
+#	exec_time
+#	line_sep
+#	battery
+#	char
+#)
+
 # Pure prompt
 autoload -U promptinit; promptinit
 prompt pure
