@@ -1,3 +1,6 @@
-[submodule ".vim/bundle/vim-livedown"]
+[submodule "vim-livedown"]
 	path = .vim/bundle/vim-livedown
 	url = https://github.com/shime/vim-livedown
+[submodule "vim-airline"]
+	path = .vim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline
