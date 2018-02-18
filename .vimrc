@@ -29,6 +29,10 @@ set smartcase		" Smart case matching
 set incsearch		" Incremental search
 set hlsearch		" Highlight search
 
+" SPLITS
+set splitbelow
+set splitright
+
 " KEY REMAPPING
 
 " I don't like hitting shift all the time
