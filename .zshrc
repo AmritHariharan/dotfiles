@@ -59,6 +59,7 @@ plugins=(
 	osx
 	chucknorris
 	command-not-found
+	z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -103,6 +104,9 @@ prompt pure
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# Colours for different types of files
+export LSCOLORS="Exfxcxdxbxhxexabagacad"
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -120,8 +124,8 @@ alias eecs388="cd ~/Google\ Drive/EECS/EECS\ 388"
 alias stats250="cd ~/Google\ Drive/STATS/STATS\ 250"
 
 # Class project aliases
-alias project370="cd ~/Google\ Drive/EECS/EECS\ 370/projects/project1"
-alias project388="cd ~/Google\ Drive/EECS/EECS\ 388/projects/project1"
+alias project370="cd ~/Google\ Drive/EECS/EECS\ 370/projects/project2"
+alias project388="cd ~/Google\ Drive/EECS/EECS\ 388/projects/project3"
 
 # Programming directories aliases
 alias projects="cd ~/Desktop/Projects"
