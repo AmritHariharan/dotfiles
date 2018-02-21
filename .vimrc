@@ -9,6 +9,7 @@ set ruler			" Show current position
 set autoindent		" Automatically indent
 set copyindent		" Copy previous indentation on autoindent
 set wildmenu		" Visual autocomplete for command menu
+set cursorline		" Have a line under the cursor position
 set lazyredraw		" Only redraw when necessary
 set showmatch		" Show highlight matching for [{()}]
 set scrolloff=5		" Keep 5 lines above/below cursor
