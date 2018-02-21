@@ -124,8 +124,8 @@ alias eecs388="cd ~/Google\ Drive/EECS/EECS\ 388"
 alias stats250="cd ~/Google\ Drive/STATS/STATS\ 250"
 
 # Class project aliases
-alias project370="cd ~/Google\ Drive/EECS/EECS\ 370/projects/project2"
-alias project388="cd ~/Google\ Drive/EECS/EECS\ 388/projects/project3"
+alias p370="cd ~/Google\ Drive/EECS/EECS\ 370/projects/project2"
+alias p388="cd ~/Google\ Drive/EECS/EECS\ 388/projects/project3"
 
 # Programming directories aliases
 alias projects="cd ~/Desktop/Projects"
@@ -135,7 +135,8 @@ alias barbot="cd ~/Desktop/Projects/BarcodeBot"
 alias c4cs="cd ~/Desktop/Projects/c4cs\.github\.io"
 
 # ssh into caen
-alias caen="ssh amrith@login.engin.umich.edu"
+alias caen="ssh caen"
+alias fastcaen="ssh fastcaen"
 
 # Alias for TheFuck
 eval "$(thefuck --alias)"
