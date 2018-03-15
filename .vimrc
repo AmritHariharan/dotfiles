@@ -13,6 +13,7 @@ set cursorline		" Have a line under the cursor position
 set lazyredraw		" Only redraw when necessary
 set showmatch		" Show highlight matching for [{()}]
 set scrolloff=5		" Keep 5 lines above/below cursor
+"set colorcolumn=80	" Draw a red line at 80 chars for line length
 
 " FILES
 set noswapfile
@@ -51,3 +52,10 @@ nnoremap E $
 " $/^ doesn't do anything
 nnoremap $ <nop>
 nnoremap ^ <nop>
+
+
+" SHORTCUTS
+
+" Compiling Latex
+nnoremap pdf !pdflatex
+
