@@ -124,15 +124,16 @@ alias eecs388="cd ~/Google\ Drive/EECS/EECS\ 388"
 alias stats250="cd ~/Google\ Drive/STATS/STATS\ 250"
 
 # Class project aliases
-alias p370="cd ~/Google\ Drive/EECS/EECS\ 370/projects/project2"
-alias p388="cd ~/Google\ Drive/EECS/EECS\ 388/projects/project3"
+alias p370="cd ~/Google\ Drive/EECS/EECS\ 370/projects/project3"
+alias p388="cd ~/Google\ Drive/EECS/EECS\ 388/projects/project4"
 
 # Programming directories aliases
 alias projects="cd ~/Desktop/Projects"
 alias barbot="cd ~/Desktop/Projects/BarcodeBot"
 
-# C4CS Main Site
+# C4CS Stuff
 alias c4cs="cd ~/Desktop/Projects/c4cs\.github\.io"
+alias csp="cd ~/Desktop/Projects/computer-science-pragmatics"
 
 # ssh into caen
 alias caen="ssh caen"
