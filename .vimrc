@@ -39,6 +39,9 @@ set splitright
 
 " KEY REMAPPING
 
+" Nerdtree
+map <C-n> ;NERDTreeToggle<CR>
+
 " Make moving between splits one gesture instead of two
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
