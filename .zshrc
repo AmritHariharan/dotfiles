@@ -60,6 +60,7 @@ plugins=(
 	chucknorris
 	command-not-found
 	z
+	history-substring-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -116,6 +117,7 @@ export LSCOLORS="Exfxcxdxbxhxexabagacad"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias vimconfig="vim ~/.vimrc"
+alias tmuxconfig="vim ~/.tmux.conf"
 
 # Courses aliases
 alias eecs376="cd ~/Google\ Drive/EECS/EECS\ 376"
