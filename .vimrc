@@ -37,6 +37,12 @@ set splitright
 
 " KEY REMAPPING
 
+" Make moving between splits one gesture instead of two
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " I don't like hitting shift all the time
 nnoremap : ;
 nnoremap ; :
