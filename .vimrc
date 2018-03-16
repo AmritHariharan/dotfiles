@@ -14,6 +14,8 @@ set lazyredraw		" Only redraw when necessary
 set showmatch		" Show highlight matching for [{()}]
 set scrolloff=5		" Keep 5 lines above/below cursor
 "set colorcolumn=80	" Draw a red line at 80 chars for line length
+set noerrorbells	" Don't be annoying pls
+set novisualbell	" Don't be annoying pls
 
 " FILES
 set noswapfile
