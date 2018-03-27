@@ -68,5 +68,6 @@ nnoremap ^ <nop>
 " SHORTCUTS
 
 " Compiling Latex
-nnoremap pdf !pdflatex
+"nnoremap pdf !pdflatex " THIS MADE PASTING REALLY SLOW (was probably waiting
+"to see if the p would be followed by (p)df
 
