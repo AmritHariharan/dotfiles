@@ -39,9 +39,6 @@ set splitright
 
 " KEY REMAPPING
 
-" Nerdtree
-map <C-n> ;NERDTreeToggle<CR>
-
 " Make moving between splits one gesture instead of two
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -66,6 +63,12 @@ nnoremap ^ <nop>
 
 
 " SHORTCUTS
+
+" Nerdtree
+map <C-n> ;NERDTreeToggle<CR>
+
+" vim-markdown
+let g:vim_markdown_folding_disabled = 1
 
 " Compiling Latex
 "nnoremap pdf !pdflatex " THIS MADE PASTING REALLY SLOW (was probably waiting
