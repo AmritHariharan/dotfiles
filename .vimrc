@@ -1,6 +1,8 @@
 call pathogen#infect()
 " TODO: Add folding
 
+let mapleader = ","
+
 " UI
 syntax on
 set mouse=a			" Use the mouse
@@ -61,6 +63,11 @@ nnoremap E $
 nnoremap $ <nop>
 nnoremap ^ <nop>
 
+" BUILDING
+nnoremap <leader>m :!make
+nnoremap <leader>mt :!make %:t:r
+" ^^^:t gets just the filename and :r removes the extension
+nnoremap <leader>mc :!make clean
 
 " SHORTCUTS
 
