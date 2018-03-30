@@ -128,7 +128,7 @@ alias stats250="cd ~/Google\ Drive/STATS/STATS\ 250"
 # Class project aliases
 alias p370="cd ~/Google\ Drive/EECS/EECS\ 370/projects/project4"
 alias vim370="p370 && vim -S ~/.vim/sessions/EECS370_p3"
-alias p388="cd ~/Google\ Drive/EECS/EECS\ 388/projects/project4"
+alias p388="cd ~/Google\ Drive/EECS/EECS\ 388/projects/project5"
 
 # Programming directories aliases
 alias projects="cd ~/Desktop/Projects"
