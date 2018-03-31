@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/Amrit/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -120,14 +120,16 @@ alias vimconfig="vim ~/.vimrc"
 alias sshconfig="vim ~/.ssh/config"
 alias tmuxconfig="vim ~/.tmux.conf"
 
+export EECS="$HOME/Google\ Drive/EECS"
+
 # Courses aliases
-alias eecs370="cd ~/Google\ Drive/EECS/EECS_370"
-alias eecs388="cd ~/Google\ Drive/EECS/EECS_388"
+alias eecs370="cd $EECS/EECS_370"
+alias eecs388="cd $EECS/EECS_388"
 
 # Class project aliases
-alias p370="cd ~/Google\ Drive/EECS/EECS_370/projects/project4"
+alias p370="cd $EECS/EECS_370/projects/project4"
 alias vim370="p370 && vim -S ~/.vim/sessions/EECS370_p3"
-alias p388="cd ~/Google\ Drive/EECS/EECS_388/projects/project5"
+alias p388="cd $EECS/EECS_388/projects/project5"
 
 # Programming directories aliases
 alias projects="cd ~/Desktop/Projects"
