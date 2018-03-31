@@ -55,7 +55,7 @@ nnoremap ; :
 map <space> /
 map <c-space> ?
 
-" Move to beginning/end of file
+" Move to beginning/end of line
 nnoremap B ^
 nnoremap E $
 
@@ -66,10 +66,10 @@ nnoremap ^ <nop>
 " BUILDING
 nnoremap <leader>m :!make
 nnoremap <leader>mt :!make %:t:r
-" ^^^:t gets just the filename and :r removes the extension
+" ^^^ :t gets just the filename and :r removes the extension
 nnoremap <leader>mc :!make clean
 
-" SHORTCUTS
+" SHORTCUTS FOR PLUGINS
 
 " Nerdtree
 map <C-n> ;NERDTreeToggle<CR>
@@ -78,6 +78,7 @@ map <C-n> ;NERDTreeToggle<CR>
 let g:vim_markdown_folding_disabled = 1
 
 " Compiling Latex
-"nnoremap pdf !pdflatex " THIS MADE PASTING REALLY SLOW (was probably waiting
+"nnoremap pdf !pdflatex
+" ^^^ THIS MADE PASTING REALLY SLOW (was probably waiting
 "to see if the p would be followed by (p)df
 

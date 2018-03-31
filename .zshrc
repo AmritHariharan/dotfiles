@@ -117,18 +117,17 @@ export LSCOLORS="Exfxcxdxbxhxexabagacad"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias vimconfig="vim ~/.vimrc"
+alias sshconfig="vim ~/.ssh/config"
 alias tmuxconfig="vim ~/.tmux.conf"
 
 # Courses aliases
-alias eecs376="cd ~/Google\ Drive/EECS/EECS\ 376"
-alias eecs370="cd ~/Google\ Drive/EECS/EECS\ 370"
-alias eecs388="cd ~/Google\ Drive/EECS/EECS\ 388"
-alias stats250="cd ~/Google\ Drive/STATS/STATS\ 250"
+alias eecs370="cd ~/Google\ Drive/EECS/EECS_370"
+alias eecs388="cd ~/Google\ Drive/EECS/EECS_388"
 
 # Class project aliases
-alias p370="cd ~/Google\ Drive/EECS/EECS\ 370/projects/project4"
+alias p370="cd ~/Google\ Drive/EECS/EECS_370/projects/project4"
 alias vim370="p370 && vim -S ~/.vim/sessions/EECS370_p3"
-alias p388="cd ~/Google\ Drive/EECS/EECS\ 388/projects/project5"
+alias p388="cd ~/Google\ Drive/EECS/EECS_388/projects/project5"
 
 # Programming directories aliases
 alias projects="cd ~/Desktop/Projects"
