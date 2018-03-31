@@ -64,10 +64,14 @@ nnoremap $ <nop>
 nnoremap ^ <nop>
 
 " BUILDING
+" Using Makefiles
 nnoremap <leader>m :!make
 nnoremap <leader>mt :!make %:t:r
 " ^^^ :t gets just the filename and :r removes the extension
 nnoremap <leader>mc :!make clean
+
+" Compiling Latex
+nnoremap <leader>pdf :!pdflatex % && rm *.aux *.log &&open %:t:r.pdf
 
 " SHORTCUTS FOR PLUGINS
 
@@ -76,9 +80,3 @@ map <C-n> ;NERDTreeToggle<CR>
 
 " vim-markdown
 let g:vim_markdown_folding_disabled = 1
-
-" Compiling Latex
-"nnoremap pdf !pdflatex
-" ^^^ THIS MADE PASTING REALLY SLOW (was probably waiting
-"to see if the p would be followed by (p)df
-
