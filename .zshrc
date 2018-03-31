@@ -128,7 +128,7 @@ alias eecs388="cd $EECS/EECS_388"
 
 # Class project aliases
 alias p370="cd $EECS/EECS_370/projects/project4"
-alias vim370="p370 && vim -S ~/.vim/sessions/EECS370_p3"
+alias vim370="p370 && vim -S ~/.vim/sessions/EECS370_p4.vim"
 alias p388="cd $EECS/EECS_388/projects/project5"
 
 # Programming directories aliases
