@@ -48,7 +48,6 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " I don't like hitting shift all the time
-nnoremap : ;
 nnoremap ; :
 
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
@@ -76,7 +75,10 @@ nnoremap <leader>pdf :!pdflatex % && rm *.aux *.log &&open %:t:r.pdf
 " SHORTCUTS FOR PLUGINS
 
 " Nerdtree
-map <C-n> ;NERDTreeToggle<CR>
+nmap <C-n> ;NERDTreeToggle<CR>
+
+" Tagbar
+nmap <C-t> ;TagbarToggle<CR>
 
 " vim-markdown
 let g:vim_markdown_folding_disabled = 1
