@@ -61,6 +61,8 @@ plugins=(
 	command-not-found
 	z
 	history-substring-search
+	zsh-autosuggestions
+	zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -121,15 +123,14 @@ alias sshconfig="vim ~/.ssh/config"
 alias tmuxconfig="vim ~/.tmux.conf"
 
 export EECS="$HOME/Google\ Drive/EECS"
+export PATH="$HOME/scripts:$PATH"
 
 # Courses aliases
-alias eecs370="cd $EECS/EECS_370"
+alias eecs498="cd $EECS/EECS_498_Robots"
+alias eecs598="cd $EECS/EECS_598_CompDS"
 alias eecs388="cd $EECS/EECS_388"
 
 # Class project aliases
-alias p370="cd $EECS/EECS_370/projects/project4"
-alias vim370="p370 && vim -S ~/.vim/sessions/EECS370_p4.vim"
-alias p388="cd $EECS/EECS_388/projects/project5"
 
 # Programming directories aliases
 alias projects="cd ~/Desktop/Projects"
