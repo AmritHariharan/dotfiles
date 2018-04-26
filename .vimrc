@@ -11,6 +11,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'plasticboy/vim-markdown'
 Plug 'tpope/vim-surround'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
