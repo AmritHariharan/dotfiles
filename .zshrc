@@ -80,7 +80,6 @@ source $ZSH/oh-my-zsh.sh
 #	dir
 #	git
 #	conda
-#	jobs
 #	exec_time
 #	line_sep
 #	battery
