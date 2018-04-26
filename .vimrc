@@ -1,7 +1,18 @@
-call pathogen#infect()
 " TODO: Add folding
 
 let mapleader = ","
+
+" PLUGINS
+call plug#begin('~/.vim/plugged')
+
+Plug 'scrooloose/nerdtree'
+Plug 'majutsushi/tagbar'
+Plug 'vim-airline/vim-airline'
+Plug 'airblade/vim-gitgutter'
+Plug 'plasticboy/vim-markdown'
+Plug 'tpope/vim-surround'
+
+call plug#end()
 
 " UI
 syntax on
