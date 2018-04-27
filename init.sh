@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Vim
-ln -s .vim ../.vim
-ln -s .vimrc ../.vim
+ln -s $(pwd)/.vim ~/.vim
+ln -s $(pwd)/.vimrc ~/.vimrc
 
 # Zsh
-ln -s .zshrc ../.zshrc
+ln -s $(pwd)/.zshrc ~/.zshrc
 
 # tmux
-ln -s .tmux.conf ../.tmux.conf
+ln -s $(pwd)/.tmux.conf ~/.tmux.conf
