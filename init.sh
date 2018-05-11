@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Run this in the dotfiles folder
+
 # Vim
 ln -s $(pwd)/.vim ~/.vim
 ln -s $(pwd)/.vimrc ~/.vimrc

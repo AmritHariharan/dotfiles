@@ -57,7 +57,6 @@ plugins=(
 	brew
 	git
 	osx
-	chucknorris
 	command-not-found
 	z
 	history-substring-search
@@ -69,22 +68,23 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+fpath=( "$HOME/.zfunctions" $fpath )
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Spaceship config
 # Order
 
-#SPACESHIP_PROMPT_ORDER=(
-#	user
-#	host
-#	dir
-#	git
-#	conda
-#	exec_time
-#	line_sep
-#	battery
-#	char
-#)
+# SPACESHIP_PROMPT_ORDER=(
+# 	user
+# 	host
+# 	dir
+# 	git
+# 	conda
+# 	exec_time
+# 	line_sep
+# 	char
+# )
 
 # Pure prompt
 autoload -U promptinit; promptinit
@@ -108,6 +108,7 @@ prompt pure
 
 # Colours for different types of files
 export LSCOLORS="Exfxcxdxbxhxexabagacad"
+export LS_COLORS="di=1;34:ln=35:so=32:pi=33:ex=31:bd=37:cd=34:su=30;41:sg=30;46:tw=30;42:ow=30;43"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -121,23 +122,29 @@ alias vimconfig="vim ~/.vimrc"
 alias sshconfig="vim ~/.ssh/config"
 alias tmuxconfig="vim ~/.tmux.conf"
 
-export EECS="$HOME/Google\ Drive/EECS"
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+	export EECS="$HOME/EECS"
+	export PROJ="$HOME/Projects"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+	export EECS="$HOME/Google\ Drive/EECS"
+	export PROJ="$HOME/Desktop/Projects"
+fi
 export PATH="$HOME/scripts:$PATH"
 
 # Courses aliases
+alias eecs285="cd $EECS/EECS_285"
 alias eecs498="cd $EECS/EECS_498_Robots"
 alias eecs598="cd $EECS/EECS_598_CompDS"
-alias eecs388="cd $EECS/EECS_388"
 
 # Class project aliases
 
 # Programming directories aliases
-alias projects="cd ~/Desktop/Projects"
-alias barbot="cd ~/Desktop/Projects/BarcodeBot"
+alias projects="cd $PROJ"
+alias barbot="cd $PROJ/BarcodeBot"
 
 # C4CS Stuff
-alias c4cs="cd ~/Desktop/Projects/c4cs\.github\.io"
-alias csp="cd ~/Desktop/Projects/computer-science-pragmatics"
+alias c4cs="cd $PROJ/c4cs\.github\.io"
+alias csp="cd $PROJ/computer-science-pragmatics"
 
 # ssh into caen
 alias caen="ssh caen"
@@ -145,6 +152,10 @@ alias fastcaen="ssh fastcaen"
 
 # Alias for TheFuck
 eval "$(thefuck --alias)"
+
+# Python virtualenvs
+alias newenv="python -m virtualenv venv"
+alias venv="source venv/bin/activate"
 
 # Other aliases
 alias longpress="defaults write -g ApplePressAndHoldEnabled -bool true"
@@ -159,8 +170,5 @@ alias alt="echo 'Playing playlist \"Alternative?\"'&&spotify play uri spotify:us
 alias djsanta="echo 'Playing playlist \"DJ SANTAS 🔥  BEATS\"'&&spotify play uri spotify:user:thestuka:playlist:7n2xDVpyaNR73ShqKvsMmI"
 alias hype="echo 'Playing playlist \"HYPE.\"'&&spotify play uri spotify:user:thestuka:playlist:221jfxKAnmWiMOwMAOsglk"
 
-# Am bored
-alias imbored="chuck | cowsay | lolcat"
-
-# Using anaconda with zsh and not bash
+# Using anaconda with zsh and not bash (macOS)
 export PATH="/Users/Amrit/anaconda/bin:$PATH"
