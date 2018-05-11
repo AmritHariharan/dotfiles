@@ -2,7 +2,7 @@
 
 let mapleader = ","
 
-" PLUGINS
+"" PLUGINS
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
@@ -16,7 +16,7 @@ Plug 'tpope/vim-commentary'
 
 call plug#end()
 
-" UI
+"" UI
 syntax on
 set mouse=a			" Use the mouse
 set number			" Show line numbers
@@ -32,27 +32,27 @@ set scrolloff=5		" Keep 5 lines above/below cursor
 set noerrorbells	" Don't be annoying pls
 set novisualbell	" Don't be annoying pls
 
-" FILES
+"" FILES
 set noswapfile
 filetype plugin indent on
 
-" TABBING
+"" TABBING
 set smarttab		" Smart tabbing
 set shiftwidth=4	" No 8 char tabs pls
 set softtabstop=4	" # of spaces in tab when editing
 set tabstop=4		" # of visual spaces / tab 
 
-" SEARCHING
+"" SEARCHING
 set ignorecase		" Case insensitive matching
 set smartcase		" Smart case matching
 set incsearch		" Incremental search
 set hlsearch		" Highlight search
 
-" SPLITS
+"" SPLITS
 set splitbelow
 set splitright
 
-" KEY REMAPPING
+"" KEY REMAPPING
 
 " Make moving between splits one gesture instead of two
 nnoremap <C-J> <C-W><C-J>
@@ -75,23 +75,30 @@ nnoremap E $
 nnoremap $ <nop>
 nnoremap ^ <nop>
 
-" BUILDING
+"" BUILDING
 " Using Makefiles
 nnoremap <leader>m :!make
 nnoremap <leader>mt :!make %:t:r
 " ^^^ :t gets just the filename and :r removes the extension
 nnoremap <leader>mc :!make clean
 
-" Compiling Latex
+"" Compiling Latex
 nnoremap <leader>pdf :!pdflatex % && rm *.aux *.log &&open %:t:r.pdf
 
-" SHORTCUTS FOR PLUGINS
+"" SHORTCUTS FOR PLUGINS
 
-" Nerdtree
+"" Nerdtree
 nmap <C-n> ;NERDTreeToggle<CR>
 
-" Tagbar
+"" Tagbar
 nmap <C-t> ;TagbarToggle<CR>
 
-" vim-markdown
+"" GitGutter
+let g:gitgutter_sign_added='┃'
+let g:gitgutter_sign_modified='┃'
+let g:gitgutter_sign_removed='◢'
+let g:gitgutter_sign_removed_first_line='◥'
+let g:gitgutter_sign_modified_removed='◢'
+
+"" vim-markdown
 let g:vim_markdown_folding_disabled = 1
