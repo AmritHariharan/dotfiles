@@ -72,20 +72,6 @@ fpath=( "$HOME/.zfunctions" $fpath )
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# Spaceship config
-# Order
-
-# SPACESHIP_PROMPT_ORDER=(
-# 	user
-# 	host
-# 	dir
-# 	git
-# 	conda
-# 	exec_time
-# 	line_sep
-# 	char
-# )
-
 # Pure prompt
 autoload -U promptinit; promptinit
 prompt pure
