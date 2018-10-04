@@ -109,6 +109,10 @@ alias vimconfig="vim ~/.vimrc"
 alias sshconfig="vim ~/.ssh/config"
 alias tmuxconfig="vim ~/.tmux.conf"
 
+if type nvim > /dev/null 2>&1; then
+	alias vim='nvim'
+fi
+
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 	export EECS="$HOME/EECS"
 	export PROJ="$HOME/Projects"
