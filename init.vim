@@ -11,9 +11,18 @@ Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'plasticboy/vim-markdown'
 Plug 'tpope/vim-surround'
-Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-commentary'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+" Plug 'neomake/neomake'
+Plug 'w0rp/ale'
+Plug '/usr/local/opt/fzf'
+
+if has('nvim')
+	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+	Plug 'Shougo/deoplete.nvim'
+	Plug 'roxma/nvim-yarp'
+	Plug 'roxma/vim-hug-neovim-rpc'
+endif
 
 call plug#end()
 
@@ -78,17 +87,25 @@ nnoremap E $
 nnoremap $ <nop>
 nnoremap ^ <nop>
 
+" Local variable rename
+nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
+
+
 "" BUILDING
 " Using Makefiles
 nnoremap <leader>m :!make
 nnoremap <leader>mt :!make %:t:r
 " ^^^ :t gets just the filename and :r removes the extension
 nnoremap <leader>mc :!make clean
+nnoremap <leader>mt :!make test
 
 "" Compiling Latex
 nnoremap <leader>pdf :!pdflatex % && rm *.aux *.log &&open %:t:r.pdf
 
 "" SHORTCUTS FOR PLUGINS
+
+"" Deoplete
+let g:deoplete#enable_at_startup = 1
 
 "" Nerdtree
 nmap <C-n> ;NERDTreeToggle<CR>
@@ -105,3 +122,4 @@ let g:gitgutter_sign_modified_removed='◢'
 
 "" vim-markdown
 let g:vim_markdown_folding_disabled = 1
+

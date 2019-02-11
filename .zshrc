@@ -109,32 +109,37 @@ alias vimconfig="vim ~/.vimrc"
 alias sshconfig="vim ~/.ssh/config"
 alias tmuxconfig="vim ~/.tmux.conf"
 
+# Use nvim instead of vim
 if type nvim > /dev/null 2>&1; then
 	alias vim='nvim'
 fi
+
+PYENV_ROOT=$(pyenv root)
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 	export EECS="$HOME/EECS"
 	export PROJ="$HOME/Projects"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-	export EECS="$HOME/Google\ Drive/EECS"
+	export EECS="$HOME/Drive/EECS"
 	export PROJ="$HOME/Desktop/Projects"
+	# pyenv-virtualenv
+	eval "$(pyenv init -)"
+	eval "$(pyenv virtualenv-init -)"
+	# vscode
+	export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 fi
 export PATH="$HOME/scripts:$PATH"
 
 # Courses aliases
-alias eecs285="cd $EECS/EECS_285"
-alias eecs498="cd $EECS/EECS_498_Robots"
-alias eecs598="cd $EECS/EECS_598_CompDS"
-
-# Class project aliases
+alias 482="cd $EECS/EECS_482"
+alias 486="cd $EECS/EECS_486"
 
 # Programming directories aliases
 alias projects="cd $PROJ"
 alias barbot="cd $PROJ/BarcodeBot"
 
 # C4CS Stuff
-alias c4cs="cd $PROJ/c4cs\.github\.io"
+alias c4cs="cd $PROJ/c4cs-site"
 alias csp="cd $PROJ/computer-science-pragmatics"
 
 # ssh into caen
@@ -161,5 +166,22 @@ alias alt="echo 'Playing playlist \"Alternative?\"'&&spotify play uri spotify:us
 alias djsanta="echo 'Playing playlist \"DJ SANTAS 🔥  BEATS\"'&&spotify play uri spotify:user:thestuka:playlist:7n2xDVpyaNR73ShqKvsMmI"
 alias hype="echo 'Playing playlist \"HYPE.\"'&&spotify play uri spotify:user:thestuka:playlist:221jfxKAnmWiMOwMAOsglk"
 
-# Using anaconda with zsh and not bash (macOS)
-export PATH="/Users/Amrit/anaconda/bin:$PATH"
+
+# added by Anaconda3 5.3.1 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/anaconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
