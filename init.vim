@@ -46,10 +46,12 @@ set novisualbell	" Don't be annoying pls
 
 "" FILES
 set noswapfile
+set nofixendofline	" Don't add newlines to every file
 filetype plugin indent on
 
 "" TABBING
 set smarttab		" Smart tabbing
+set expandtab		" Spaces
 set shiftwidth=4	" No 8 char tabs pls
 set softtabstop=4	" # of spaces in tab when editing
 set tabstop=4		" # of visual spaces / tab 
@@ -65,6 +67,9 @@ set splitbelow
 set splitright
 
 "" KEY REMAPPING
+
+" Copy to clipboard
+noremap <Leader>y "*y
 
 " Make moving between splits one gesture instead of two
 nnoremap <C-J> <C-W><C-J>
@@ -83,13 +88,8 @@ map <c-space> ?
 nnoremap B ^
 nnoremap E $
 
-" $/^ doesn't do anything
-nnoremap $ <nop>
-nnoremap ^ <nop>
-
 " Local variable rename
-nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
-
+noremap gr gdva{:s///gc<left><left><left>
 
 "" BUILDING
 " Using Makefiles
@@ -104,14 +104,29 @@ nnoremap <leader>pdf :!pdflatex % && rm *.aux *.log &&open %:t:r.pdf
 
 "" SHORTCUTS FOR PLUGINS
 
+"" Ale
+let g:ale_sign_error = '⨉ '
+let g:ale_sign_warning = '? '
+let g:airline#extensions#ale#enabled = 1
+let g:ale_sign_column_always = 1
+highlight clear ALEErrorSign
+highlight clear ALEWarningSign
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+" Check Python files with flake8 and pylint.
+let b:ale_linters = ['flake8']
+" Fix Python files with autopep8 and yapf.
+let b:ale_fixers = ['autopep8', 'yapf']
+
 "" Deoplete
 let g:deoplete#enable_at_startup = 1
 
 "" Nerdtree
-nmap <C-n> ;NERDTreeToggle<CR>
+nmap <C-n> :NERDTreeToggle<CR>
 
 "" Tagbar
-nmap <C-t> ;TagbarToggle<CR>
+nmap <C-t> :TagbarToggle<CR>
 
 "" GitGutter
 let g:gitgutter_sign_added='┃'
@@ -122,4 +137,7 @@ let g:gitgutter_sign_modified_removed='◢'
 
 "" vim-markdown
 let g:vim_markdown_folding_disabled = 1
+
+"" FZF
+nnoremap f<CR> :FZF<CR>
 
