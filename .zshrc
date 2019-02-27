@@ -109,6 +109,10 @@ alias vimconfig="vim ~/.vimrc"
 alias sshconfig="vim ~/.ssh/config"
 alias tmuxconfig="vim ~/.tmux.conf"
 
+# Git bs
+alias oops="git stash && git stash drop"
+alias vimdiff="git difftool -—tool=vimdiff"
+
 # Use nvim instead of vim
 if type nvim > /dev/null 2>&1; then
 	alias vim='nvim'
@@ -138,13 +142,8 @@ alias 486="cd $EECS/EECS_486"
 alias projects="cd $PROJ"
 alias barbot="cd $PROJ/BarcodeBot"
 
-# C4CS Stuff
-alias c4cs="cd $PROJ/c4cs-site"
-alias csp="cd $PROJ/computer-science-pragmatics"
-
 # ssh into caen
 alias caen="ssh caen"
-alias fastcaen="ssh fastcaen"
 
 # Alias for TheFuck
 eval "$(thefuck --alias)"
