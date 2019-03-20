@@ -10,4 +10,4 @@ ln -s $(pwd)/.vimrc ~/.vimrc
 ln -s $(pwd)/.zshrc ~/.zshrc
 
 # tmux
-ln -s $(pwd)/.tmux.conf ~/.tmux.conf
+ln -s $(pwd)/tmux.conf ~/.tmux.conf
