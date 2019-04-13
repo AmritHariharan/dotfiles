@@ -7,9 +7,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="materialshell-oceanic"
-#ZSH_THEME="spaceship"
-ZSH_THEME=""
+ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="avit"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -57,12 +56,12 @@ plugins=(
 	brew
 	git
 	osx
-	command-not-found
+	# command-not-found
 	z
 	history-substring-search
 	zsh-autosuggestions
 	zsh-syntax-highlighting
-	kubectl
+	# kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -74,8 +73,8 @@ fpath=( "$HOME/.zfunctions" $fpath )
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Pure prompt
-autoload -U promptinit; promptinit
-prompt pure
+# autoload -U promptinit; promptinit
+# prompt pure
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -145,9 +144,6 @@ alias barbot="cd $PROJ/BarcodeBot"
 # ssh into caen
 alias caen="ssh caen"
 
-# Alias for TheFuck
-eval "$(thefuck --alias)"
-
 # Python virtualenvs
 alias newenv="python -m virtualenv venv"
 alias venv="source venv/bin/activate"
@@ -184,3 +180,5 @@ unset __conda_setup
 # <<< conda init <<<
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source ~/dotfiles/.purepower
