@@ -31,7 +31,7 @@ syntax on
 set nocompatible
 set mouse=a			" Use the mouse
 set number			" Show line numbers
-set relativenumber  " Show relative line numbers
+" set relativenumber  " Show relative line numbers
 set ruler			" Show current position
 set autoindent		" Automatically indent
 set copyindent		" Copy previous indentation on autoindent
@@ -137,6 +137,9 @@ let g:gitgutter_sign_modified_removed='◢'
 
 "" vim-markdown
 let g:vim_markdown_folding_disabled = 1
+
+"" Lightline
+set laststatus=2
 
 "" FZF
 nnoremap f<CR> :FZF<CR>
