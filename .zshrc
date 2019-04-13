@@ -8,7 +8,6 @@ export ZSH=$HOME/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-# ZSH_THEME="avit"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -117,29 +116,16 @@ if type nvim > /dev/null 2>&1; then
 	alias vim='nvim'
 fi
 
-PYENV_ROOT=$(pyenv root)
-
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 	export EECS="$HOME/EECS"
 	export PROJ="$HOME/Projects"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
 	export EECS="$HOME/Drive/EECS"
 	export PROJ="$HOME/Desktop/Projects"
-	# pyenv-virtualenv
-	eval "$(pyenv init -)"
-	eval "$(pyenv virtualenv-init -)"
 	# vscode
 	export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 fi
 export PATH="$HOME/scripts:$PATH"
-
-# Courses aliases
-alias 482="cd $EECS/EECS_482"
-alias 486="cd $EECS/EECS_486"
-
-# Programming directories aliases
-alias projects="cd $PROJ"
-alias barbot="cd $PROJ/BarcodeBot"
 
 # ssh into caen
 alias caen="ssh caen"
@@ -152,31 +138,21 @@ alias venv="source venv/bin/activate"
 alias longpress="defaults write -g ApplePressAndHoldEnabled -bool true"
 alias nolongpress="defaults write -g ApplePressAndHoldEnabled -bool false"
 
-# Spotify playlists
-alias lfr="echo 'Playing playlist \"Liked From Radio\"'&&spotify play uri spotify:user:thestuka:playlist:6xA7cYCSFY6yUkREO12ulm"
-alias chill="echo 'Playing playlist \"Chill\"'&&spotify play uri spotify:user:thestuka:playlist:3UwUYvAPhA87EmrAs4SLDk"
-alias oldies="echo 'Playing playlist \"Oldies\"'&&spotify play uri spotify:user:thestuka:playlist:1tzvjhkfglbsiDRPBYBlKX"
-alias funky="echo 'Playing playlist \"FUNKY\"'&&spotify play uri spotify:user:thestuka:playlist:5QIDBvAHeqVsd80rgeleRa"
-alias alt="echo 'Playing playlist \"Alternative?\"'&&spotify play uri spotify:user:thestuka:playlist:6EDZjGPzTHnrrSqucjVqon"
-alias djsanta="echo 'Playing playlist \"DJ SANTAS 🔥  BEATS\"'&&spotify play uri spotify:user:thestuka:playlist:7n2xDVpyaNR73ShqKvsMmI"
-alias hype="echo 'Playing playlist \"HYPE.\"'&&spotify play uri spotify:user:thestuka:playlist:221jfxKAnmWiMOwMAOsglk"
-
-
 # added by Anaconda3 5.3.1 installer
 # >>> conda init >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/anaconda3/etc/profile.d/conda.sh"
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+# __conda_setup="$(CONDA_REPORT_ERRORS=false '/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     \eval "$__conda_setup"
+# else
+#     if [ -f "/anaconda3/etc/profile.d/conda.sh" ]; then
+#         . "/anaconda3/etc/profile.d/conda.sh"
+#         CONDA_CHANGEPS1=false conda activate base
+#     else
+#         \export PATH="/anaconda3/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
 # <<< conda init <<<
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
