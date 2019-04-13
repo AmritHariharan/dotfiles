@@ -105,8 +105,8 @@ nnoremap <leader>pdf :!pdflatex % && rm *.aux *.log &&open %:t:r.pdf
 "" SHORTCUTS FOR PLUGINS
 
 "" Ale
-let g:ale_sign_error = '⨉ '
-let g:ale_sign_warning = '? '
+" let g:ale_sign_error = '⨉ '
+" let g:ale_sign_warning = '? '
 let g:airline#extensions#ale#enabled = 1
 let g:ale_sign_column_always = 1
 highlight clear ALEErrorSign
