@@ -13,8 +13,10 @@ Plug 'plasticboy/vim-markdown'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 " Plug 'neomake/neomake'
+Plug 'tpope/vim-fugitive'
 Plug 'w0rp/ale'
 Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -143,4 +145,6 @@ set laststatus=2
 
 "" FZF
 nnoremap f<CR> :FZF<CR>
+nnoremap c<CR> :Commits<CR>
+nnoremap t<CR> :Tags<CR>
 
