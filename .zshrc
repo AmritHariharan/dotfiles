@@ -57,8 +57,8 @@ plugins=(
 	osx
 	# command-not-found
 	z
-	history-substring-search
-	zsh-autosuggestions
+	# history-substring-search
+	# zsh-autosuggestions
 	zsh-syntax-highlighting
 	# kubectl
 )
@@ -122,6 +122,9 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 elif [[ "$OSTYPE" == "darwin"* ]]; then
 	export EECS="$HOME/Drive/EECS"
 	export PROJ="$HOME/Desktop/Projects"
+    # PYENV_ROOT=$(pyenv root)
+    # eval "$(pyenv init -)"
+	# eval "$(pyenv virtualenv-init -)"
 	# vscode
 	export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 fi
