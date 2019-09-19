@@ -134,7 +134,7 @@ export PATH="$HOME/scripts:$PATH"
 alias caen="ssh caen"
 
 # Python virtualenvs
-alias newenv="python -m virtualenv venv"
+alias newenv="python3 -m virtualenv venv"
 alias venv="source venv/bin/activate"
 
 # Other aliases

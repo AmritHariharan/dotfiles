@@ -18,13 +18,13 @@ Plug 'w0rp/ale'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
-if has('nvim')
-	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-	Plug 'Shougo/deoplete.nvim'
-	Plug 'roxma/nvim-yarp'
-	Plug 'roxma/vim-hug-neovim-rpc'
-endif
+" if has('nvim')
+" 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" else
+" 	Plug 'Shougo/deoplete.nvim'
+" 	Plug 'roxma/nvim-yarp'
+" 	Plug 'roxma/vim-hug-neovim-rpc'
+" endif
 
 call plug#end()
 
@@ -96,7 +96,7 @@ noremap gr gdva{:s///gc<left><left><left>
 "" BUILDING
 " Using Makefiles
 nnoremap <leader>m :!make
-nnoremap <leader>mt :!make %:t:r
+nnoremap <leader>mf :!make %:t:r
 " ^^^ :t gets just the filename and :r removes the extension
 nnoremap <leader>mc :!make clean
 nnoremap <leader>mt :!make test
