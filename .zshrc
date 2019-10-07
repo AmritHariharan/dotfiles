@@ -71,10 +71,6 @@ fpath=( "$HOME/.zfunctions" $fpath )
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# Pure prompt
-# autoload -U promptinit; promptinit
-# prompt pure
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
