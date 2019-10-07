@@ -12,19 +12,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'plasticboy/vim-markdown'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-" Plug 'neomake/neomake'
 Plug 'tpope/vim-fugitive'
-Plug 'w0rp/ale'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
-
-" if has('nvim')
-" 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" else
-" 	Plug 'Shougo/deoplete.nvim'
-" 	Plug 'roxma/nvim-yarp'
-" 	Plug 'roxma/vim-hug-neovim-rpc'
-" endif
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -135,7 +126,7 @@ let g:gitgutter_sign_added='┃'
 let g:gitgutter_sign_modified='┃'
 let g:gitgutter_sign_removed='◢'
 let g:gitgutter_sign_removed_first_line='◥'
-let g:gitgutter_sign_modified_removed='◢'
+let g:gitgutter_sign_modified_removed='◢'  
 
 "" vim-markdown
 let g:vim_markdown_folding_disabled = 1
