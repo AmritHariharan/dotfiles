@@ -54,9 +54,9 @@ filetype plugin indent on
 "" TABBING
 set smarttab		" Smart tabbing
 set expandtab		" Spaces
-set shiftwidth=4	" No 8 char tabs pls
-set softtabstop=4	" # of spaces in tab when editing
-set tabstop=4		" # of visual spaces / tab 
+set shiftwidth=2	" No 8 char tabs pls
+set softtabstop=2	" # of spaces in tab when editing
+set tabstop=2		" # of visual spaces / tab 
 
 "" SEARCHING
 set ignorecase		" Case insensitive matching
