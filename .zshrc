@@ -102,6 +102,11 @@ source $HOME/.oh-my-zsh/oh-my-zsh.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# Set fzf to use ripgrep if available
+if type rg &> /dev/null; then
+  export FZF_DEFAULT_COMMAND='rg --files --hidden -g "!**/.git/**"'
+fi
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
