@@ -8,8 +8,9 @@ autoload -U compinit; compinit
 source <(fzf --zsh)
 
 # Source submodule plugins
-source ~/dotfiles/zsh_plugins/fzf-tab/fzf-tab.plugin.zsh
-source ~/dotfiles/zsh_plugins/zsh-z/zsh-z.plugin.zsh
+for plugin in $(ls ~/dotfiles/zsh_plugins/*/*.plugin.zsh); do
+  source $plugin
+done
 
 # Starship prompt
 eval "$(starship init zsh)"
