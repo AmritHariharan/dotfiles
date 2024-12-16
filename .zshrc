@@ -14,3 +14,5 @@ done
 
 # Starship prompt
 eval "$(starship init zsh)"
+
+source ~/dotfiles/zsh_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
