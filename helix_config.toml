@@ -1,0 +1,28 @@
+[editor]
+# Show currently open buffers, only when more than one exists.
+bufferline = "multiple"
+# Highlight all lines with a cursor
+cursorline = true
+# Use relative line numbers
+line-number = "relative"
+# Force the theme to show colors
+true-color = true
+
+# Different cursors for different modes
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+# Add git to status line
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name"]
+
+# Use shift x to shrink selection by one line
+[keys.normal]
+A-x = "extend_to_line_bounds"
+X = "select_line_above"
+
+[keys.select]
+A-x = "extend_to_line_bounds"
+X = "select_line_above"
