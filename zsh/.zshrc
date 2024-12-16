@@ -8,7 +8,7 @@ autoload -U compinit; compinit
 source <(fzf --zsh)
 
 # Source submodule plugins
-for plugin in $(ls ~/dotfiles/zsh_plugins/*/*.plugin.zsh); do
+for plugin in $(ls ~/dotfiles/zsh/plugins/*/*.plugin.zsh); do
   source $plugin
 done
 

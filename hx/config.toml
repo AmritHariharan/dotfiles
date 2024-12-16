@@ -7,6 +7,10 @@ cursorline = true
 line-number = "relative"
 # Force the theme to show colors
 true-color = true
+color-modes = true
+
+[editor.indent-guides]
+render = true
 
 # Different cursors for different modes
 [editor.cursor-shape]
