@@ -1,3 +1,5 @@
+theme = "catppuccin_latte"
+
 [editor]
 # Show currently open buffers, only when more than one exists.
 bufferline = "multiple"
