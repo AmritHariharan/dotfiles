@@ -20,6 +20,10 @@ insert = "bar"
 normal = "block"
 select = "underline"
 
+# Show hidden files
+[editor.file-picker]
+hidden = false
+
 # Add git to status line
 [editor.statusline]
 left = ["mode", "spinner", "version-control", "file-name"]
