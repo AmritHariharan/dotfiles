@@ -1,11 +1,14 @@
 general.import = [
   # uncomment the flavour you want below:
-  # "~/.config/alacritty/catppuccin-latte.toml"
+  "~/.config/alacritty/catppuccin-latte.toml"
   # "~/.config/alacritty/catppuccin-frappe.toml"
-  "~/.config/alacritty/catppuccin-macchiato.toml"
+  # "~/.config/alacritty/catppuccin-macchiato.toml"
   # "~/.config/alacritty/catppuccin-mocha.toml"
 ]
 
 [font]
-#normal = { family = "TX-02-Trial", style = "Regular"}
-size = 13
+normal = { family = "JetBrains Mono", style = "Light"}
+italic = { style = "Light Italic"}
+bold = { style = "Regular"}
+bold_italic = { style = "Italic"}
+size = 14
