@@ -2,6 +2,9 @@ general.import = [
   "~/.config/alacritty/themes/active.toml"
 ]
 
+[env]
+ALACRITTY = "true"
+
 [font]
 normal = { family = "JetBrains Mono", style = "Light"}
 italic = { style = "Light Italic"}

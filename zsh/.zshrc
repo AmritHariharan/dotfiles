@@ -52,16 +52,17 @@ alias gst='git status'
 alias gss='git status --short'
 alias gsb='git status --short --branch'
 
-if [ "$ALACRITTY" = "true" && "$OSTYPE" == "darwin"* ]
+if [[ $ALACRITTY && $(uname) == "Darwin" ]]
 then
   theme() { ln -sf $HOME/.config/alacritty/themes/$1.toml $HOME/.config/alacritty/themes/active.toml }
-  local ALACRITTY_THEME=$(defaults read -g AppleInterfaceStyle 2>/dev/null || echo "Light")
-  if [ "$ALACRITTY_THEME" = "Dark" ]
+  local ALACRITTY_THEME=$(defaults read -g AppleInterfaceStyle 2>/dev/null)
+  if [[ ${ALACRITTY_THEME} = "Dark" ]]
   then
-    theme "catppuccin-latte"
-  else
     theme "catppuccin-macchiato"
+  else
+    theme "catppuccin-latte"
   fi
+  touch $HOME/.config/alacritty/alacritty.toml
 fi
 
 # Starship prompt
