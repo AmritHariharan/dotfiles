@@ -12,3 +12,11 @@ italic = { style = "Light Italic"}
 bold = { style = "Regular"}
 bold_italic = { style = "Italic"}
 size = 14
+
+[keyboard]
+bindings = [
+  { key = "V", mods = "Alt|Shift|Control|Super", mode = "~Search", action = "ToggleViMode" },
+  { key = "X", mode = "Vi|~Search", action = "ToggleLineSelection" },
+  { key = "K", mods = "Control", mode = "Vi|~Search", action = "ScrollHalfPageUp" },
+  { key = "J", mods = "Control", mode = "Vi|~Search", action = "ScrollHalfPageDown" },
+]

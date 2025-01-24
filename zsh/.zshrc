@@ -7,6 +7,9 @@ autoload -U compinit; compinit
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
+# Case insensitive completion
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
 # Source submodule plugins
 for plugin in $(ls ~/dotfiles/zsh/plugins/*/*.plugin.zsh); do
   source $plugin
