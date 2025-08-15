@@ -6,11 +6,10 @@ general.import = [
 ALACRITTY = "true"
 
 [font]
-normal = { family = "JetBrains Mono", style = "Light"}
-italic = { style = "Light Italic"}
-bold = { style = "Regular"}
-bold_italic = { style = "Italic"}
-size = 14
+normal = { family = "Berkeley Mono" }
+italic = { style = "Oblique" }
+bold_italic = { style = "Bold Oblique" }
+size = 15
 
 [keyboard]
 bindings = [
