@@ -5,3 +5,9 @@ Host *
 Host erebor
   HostName Erebor.local
   User amrit
+Host esgaroth
+  HostName Esgaroth.local
+  User amrit
+Host piframe
+  HostName piframe.local
+  User amrit
