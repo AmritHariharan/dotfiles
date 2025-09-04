@@ -3,6 +3,7 @@ $baseConfigDir = "C:\Users\amhariha\dotfiles"
 $configMap = @{
     "hx" = "C:\Users\amhariha\AppData\Roaming\helix"
     "alacritty" = "C:\Users\amhariha\AppData\Roaming\alacritty"
+    "wezterm\.wezterm.lua" = "C:\Users\amhariha\.wezterm.lua"
 }
 
 foreach ($relativePath in $configMap.Keys) {
