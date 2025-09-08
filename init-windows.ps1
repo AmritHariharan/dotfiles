@@ -1,8 +1,9 @@
 # Define the list of source paths and their target locations
 $baseConfigDir = "C:\Users\amhariha\dotfiles"
 $configMap = @{
-    "hx" = "C:\Users\amhariha\AppData\Roaming\helix"
     "alacritty" = "C:\Users\amhariha\AppData\Roaming\alacritty"
+    "hx" = "C:\Users\amhariha\AppData\Roaming\helix"
+    "kanata" = "C:\Users\amhariha\AppData\Roaming\kanata"
     "wezterm\.wezterm.lua" = "C:\Users\amhariha\.wezterm.lua"
 }
 
