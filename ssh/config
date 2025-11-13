@@ -2,12 +2,16 @@ Host *
   ForwardAgent yes
   AddKeysToAgent yes
   IdentityFile ~/.ssh/id_ed25519
+  SetEnv TERM=xterm-256color
 Host erebor
-  HostName Erebor.local
+  HostName erebor.lan
   User amrit
 Host esgaroth
-  HostName Esgaroth.local
+  HostName esgaroth.lan
   User amrit
 Host piframe
-  HostName piframe.local
+  HostName piframe.lan
+  User amrit
+Host mac
+  HostName mac.lan
   User amrit
